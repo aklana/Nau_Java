@@ -2,9 +2,9 @@ package task2.fifth;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class processingTask implements Task{
+public class ProcessingTask implements Task{
     private Queue<String> queue = new LinkedList<>();
-    boolean stopProcess = false;
+    boolean stopProcess = true;
 
     public void Add(String data) {
         queue.add(data);

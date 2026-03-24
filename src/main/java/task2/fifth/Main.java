@@ -3,13 +3,14 @@ package task2.fifth;
 public class Main {
 
     public static void main(String[] args) {
-        processingTask task = new processingTask();
+        ProcessingTask task = new ProcessingTask();
 
         task.Add("Текст романа");
         task.Add("Текст песни");
         task.Add("Текст стихотворения");
         task.Add("Текст пьесы");
-        task.start();
+        Thread thread = new Thread(task::start);
+        thread.start();
         task.stop();
     }
 }

@@ -7,11 +7,11 @@ public class Employee {
     private String department;
     private Double salary;
 
-    public Employee(String _fullName, Integer _age, String _department, Double _salary) {
-        this.fullName = _fullName;
-        this.age = _age;
-        this.department = _department;
-        this.salary = _salary;
+    public Employee(String fullName, Integer age, String department, Double salary) {
+        this.fullName = fullName;
+        this.age = age;
+        this.department = department;
+        this.salary = salary;
     }
 
     public String getFullName() {
